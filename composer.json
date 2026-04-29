@@ -1,0 +1,23 @@
+{
+    "name": "shubaivan/symfony-shared-bundle",
+    "description": "Shared Symfony bundle for product/order microservices: mapped superclass, DTOs, RabbitMQ Messenger config",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "symfony/framework-bundle": "^6.4",
+        "symfony/messenger": "^6.4",
+        "symfony/serializer": "^6.4",
+        "symfony/validator": "^6.4",
+        "symfony/uid": "^6.4",
+        "doctrine/orm": "^2.17 || ^3.0",
+        "doctrine/doctrine-bundle": "^2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shared\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
