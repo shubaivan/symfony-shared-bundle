@@ -1,0 +1,14 @@
+framework:
+    messenger:
+        transports:
+            product_sync:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    exchange:
+                        name: products
+                        type: fanout
+                    queues:
+                        product_sync: ~
+
+        routing:
+            Shared\Message\ProductSyncMessage: product_sync
